@@ -1,24 +1,26 @@
 // Missing Number in Array
 
-#include <stdio.h>
 
-int main()
+  #include <stdio.h>
+
+    int main()
 {
-    int n, sum = 0;
-
+    printf("Enter the value of n: ");
     scanf("%d", &n);
 
     int arr[n - 1];
+    int sum = 0, expectedSum;
 
-    for (int i = 0; i < n - 1; i++)
-    {
+    printf("Enter %d elements:\n", n - 1);
+
+    for(i = 0; i < n - 1; i++) {
         scanf("%d", &arr[i]);
         sum += arr[i];
     }
 
-    int expectedSum = n * (n + 1) / 2;
+    expectedSum = n * (n + 1) / 2;
 
-    printf("%d", expectedSum - sum);
+    printf("Missing element = %d\n", expectedSum - sum);
 
     return 0;
 }
