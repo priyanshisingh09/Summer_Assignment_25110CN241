@@ -6,13 +6,15 @@ int main()
 {
     int n, sum, found = 0;
 
+    printf("Enter the number of element:");
     scanf("%d", &n);
 
     int arr[n];
+   
+    printf("Enter the elements:");
 
     for (int i = 0; i < n; i++)
-        scanf("%d", &arr[i]);
-
+        scanf("%d", &arr[i]);
     scanf("%d", &sum);
 
     for (int i = 0; i < n; i++)
